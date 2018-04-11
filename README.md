@@ -14,3 +14,9 @@ and module:
 
     python3 setup.py build_ext
     python3 setup.py install
+
+However for the Raspberry Pi you can instead just run this ready to go Docker
+container which will automatically install libgpiod and libgpiod-python with
+Python 3 automatically: https://github.com/tdicola/pi_libgpiod_python  If you
+aren't familiar with installing libgpiod, compiling Linux tools from scratch,
+etc. then it's highly recommended to just use the Docker container.
