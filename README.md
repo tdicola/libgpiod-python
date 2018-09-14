@@ -4,10 +4,9 @@ Simple SWIG-based Python wrapper around the libgpiod modern Linux GPIO character
 
 ## Installation
 
-You must have both libgpiod and SWIG installed then run the following SWIG
-command to generate the wrapper:
+You must have both libgpiod and SWIG installed. On Debian/Ubuntu, you can install them by:
 
-    swig3.0 -python -I/usr/local/include libgpiod.i
+    sudo apt install swig libgpiod-dev
 
 Now use Python's standard setup.py commands to build and install the extension
 and module:
