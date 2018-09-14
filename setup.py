@@ -7,9 +7,9 @@ from setuptools import setup, Extension
 
 
 libgpiod_module = Extension('_libgpiod',
-                            sources=['libgpiod_wrap.c'],
-                            libraries = ['gpiod'],
-                            library_dirs = ['/usr/local/lib'])
+                            sources=['libgpiod.i'],
+                            swig_opts=['-I/usr/include'],
+                            libraries = ['gpiod'])
 
 setup(
     name='libgpiod',
